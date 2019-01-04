@@ -1,0 +1,25 @@
+$medium: "(max-width: 800px)";
+
+.keyboard
+  display:flex
+  flex-direction: column
+  height: 100%
+
+.keyboard-row
+  display: flex
+  justify-content: space-around
+  height: 33%
+
+.drum-pad
+  margin: 4%
+  flex-basis: 30%
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+  background-color: #FFE5AA
+  box-shadow: black 3px 3px 5px
+
+@media screen and #{($medium)}
+.drum-pad
+  height: 75%

@@ -1,0 +1,36 @@
+$medium: "(max-width: 800px)";
+
+.volume
+	display: flex
+	width: 100%
+	height: 30%
+	align-items: center
+	justify-content: center
+
+.volume__volume-bar__bar
+  width: 100%
+  height: 5%
+  background-color: #1A1200
+
+.volume__volume-bar__indicator
+  width: 0.7%
+  height: 5%
+  background-color: #9E8243
+  position: absolute
+
+
+
+@media screen and #{($medium)}
+ .volume
+  width: 5%
+  height: 100%
+
+@media screen and #{($medium)}
+ .volume__volume-bar__bar
+  width: 10%
+  height: 100%
+
+@media screen and #{($medium)}
+ .volume__volume-bar__indicator
+  width: 5%
+  height: 0.7%
