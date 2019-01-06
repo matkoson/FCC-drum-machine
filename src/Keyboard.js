@@ -4,36 +4,40 @@ class Keyboard extends Component {
     return (
       <section className="keyboard">
         <div className="keyboard-row">
-          <div className="drum-pad">
+          <div
+            onMouseDown={e => (e.target.style.backgroundColor = "red")}
+            onMouseUp={e => (e.target.style.backgroundColor = "")}
+            className="drum-pad"
+          >
             <span>Q</span>
           </div>
-          <div className="drum-pad">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             <span>W</span>
           </div>
-          <div className="drum-pad">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             <span>E</span>
           </div>
         </div>
-        <div className="keyboard-row" span>
-          <div className="drum-pad">
+        <div className="keyboard-row">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             <span>A</span>
           </div>
-          <div className="drum-pad">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             <span>S</span>
           </div>
-          <div className="drum-pad">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             <span>D</span>
           </div>
         </div>
-        <div className="keyboard-row" span>
-          <div className="drum-pad">
+        <div className="keyboard-row">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             <span>Z</span>
           </div>
-          <div className="drum-pad">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             {" "}
             <span>X</span>
           </div>
-          <div className="drum-pad">
+          <div onClick={this.handleKeyClick} className="drum-pad">
             {" "}
             <span>C</span>
           </div>
