@@ -14,9 +14,47 @@ class App extends Component {
       powerOn: true,
       bank: false,
       displayInput: "",
-      audioSet: 1
+      audioSet: this.HeatherKit
     };
     this.handlePowerClick = this.handlePowerClick.bind(this);
+    //
+    //
+    //
+    this.HeatherKit = [
+      ["Heather 1", "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"],
+      ["Heather 2", "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"],
+      ["Heather 3", "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"],
+      [
+        "Heather 4",
+        "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+      ],
+      ["Clap", "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"],
+      ["Open HH", "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"],
+      [
+        "Kick n' Hat",
+        "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+      ],
+      ["Kick", "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"],
+      ["Closed HH", "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"]
+    ];
+    //
+    this.SmoothPianoKit = [
+      ["Chord 1", "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"],
+      ["Chord 2", "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"],
+      ["Chord 3", "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"],
+      ["Shaker", "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"],
+      ["Open HH", "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"],
+      ["Closed HH", "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"],
+      [
+        "Punchy Kick",
+        "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+      ],
+      [
+        "Side Stick",
+        "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+      ],
+      ["Snare", "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"]
+    ];
   }
 
   handlePowerClick() {

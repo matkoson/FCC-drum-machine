@@ -1,12 +1,12 @@
-‘https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3 130’
-‘https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3 72’
-‘https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3 40’
-‘https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3 48’
-‘https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3 38’
-‘https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3 50’
-‘https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3 53’
-‘https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3 64’
-‘https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3 43’
+
+‘’
+‘’
+
+https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3 38
+‘ 50’
+‘ 53’
+‘ 64’
+‘h 43’
 
 
 
