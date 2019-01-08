@@ -3,13 +3,7 @@ import React, { PureComponent } from "react";
 class Volume extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      volumeVal: 0.5
-    };
-    this.handleRangeChange = this.handleRangeChange.bind(this);
-  }
-  handleRangeChange(event) {
-    this.setState({ volumeVal: event.target.value });
+    this.state = {};
   }
 
   render() {
@@ -24,7 +18,7 @@ class Volume extends PureComponent {
         value={this.state.volumeVal}
         data-orientation="horizontal"
         className="volume__volume-bar__bar"
-        onChange={this.handleRangeChange}
+        onChange={this.props.handleVolChange}
       />
     ) : (
       <input
