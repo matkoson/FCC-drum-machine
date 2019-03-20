@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import "../Styles/Volume.sass";
 
 class Volume extends PureComponent {
   constructor(props) {

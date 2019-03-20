@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import "./App.sass";
-import Keyboard from "./Keyboard";
-import "./Keyboard.sass";
-import Display from "./Display";
-import "./Display.sass";
-import Volume from "./Volume";
-import "./Volume.sass";
+import "./Styles/App.sass";
+import Keyboard from "./Components/Keyboard";
+import Display from "./Components/Display";
+import Volume from "./Components/Volume";
 
 class App extends Component {
   constructor(props) {
@@ -53,8 +50,6 @@ class App extends Component {
       ],
       ["Snare", "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"]
     ];
-    //
-    //
     this.state = {
       powerOn: true,
       bank: false,
@@ -74,7 +69,6 @@ class App extends Component {
     this.state.powerOn
       ? this.setState({ powerOn: false, displayVal: "" })
       : this.setState({ powerOn: true });
-    console.log(this.state.powerOn);
   }
   handleBankClick() {
     if (this.state.powerOn) {
@@ -96,21 +90,18 @@ class App extends Component {
     if (this.state.powerOn) {
       if (event.target.children && event.target.children[0]) {
         event.target.children[0].volume = this.state.volumeVal;
-        console.log(event.target.children[0].volume);
         event.target.children[0].play();
-      } else {
-        console.log("Please wait");
       }
-      if (this.state.powerOn) {
-        let sound;
-        if (event.target.attributes && event.target.attributes["data-num"]) {
-          sound = event.target.attributes["data-num"].value - 1;
-        }
-        if (sound)
-          this.setState({ displayVal: this.state.audioSet.set[sound][0] });
+      let soundNum;
+      if (event.target.attributes && event.target.attributes["data-num"]) {
+        soundNum = event.target.attributes["data-num"].value;
+      }
+      if (soundNum) {
+        this.setState({ displayVal: this.state.audioSet.set[soundNum][0] });
       }
     }
   }
+
   render() {
     let powerState;
     let bankSwitch = "";
